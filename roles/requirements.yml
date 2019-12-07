@@ -1,0 +1,4 @@
+---
+
+- src: https://github.com/Ravio1i/ansible-role-remarkable-templates
+  name: remarkable-templates
