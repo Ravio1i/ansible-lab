@@ -1,2 +1,6 @@
+---
 - name: trivy
   src: darkwizard242.trivy
+
+- name: remarkable-templates
+  src: https://github.com/Ravio1i/ansible-role-remarkable-templates

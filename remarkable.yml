@@ -1,0 +1,6 @@
+---
+
+- hosts: remarkable
+  become: true
+  roles:
+     - role: remarkable_templates
