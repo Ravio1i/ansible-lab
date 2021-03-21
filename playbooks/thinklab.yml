@@ -1,0 +1,23 @@
+---
+
+- hosts: localhost
+  become: true
+  roles:
+  - role: trivy
+  # TODO: google-drive-ocamlfuse
+  #       apt_repo: ppa:allessandro-strada/ppa
+  tasks:
+  - name: Install packages from apt
+    ansible.builtin.apt:
+      name:
+      - cifs-utils
+      - keepassxc
+      - wireshark
+      - zoom
+      - vlc
+      - rdesktop
+      - rsync
+  - name: Install packages from snap
+    community.general.snap:
+      name:
+      - code
